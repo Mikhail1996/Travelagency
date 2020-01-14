@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/*------------ Header -------------*/
+
+html, body{
+   height: 100%; 
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 800px;
+    margin: auto;
+    min-height: 100%;
+}
+
+.container {
+    box-sizing: border-box;
+    /*min-height: 100%;
+    padding-bottom: 80px;*/
+    /*background-color: azure;*/
+    background-image: url(src/fon.jpg);
+    flex: 1 0 auto;
+}
+
+header {
+    height: 200px;
+    background: url('/src/main.jpg'), rgba(255,255,255,0.5);
+}
+
+.logo{
+    display: block;
+    float: left;
+    margin-left: 5%;
+}
+
+.icons {
+    float: right;
+    margin: 25px 50px;
+    transform: scale(1.3);
+}
+
+.icons ul li {
+    display: inline;
+    list-style: none;
+    margin: 5px;
+}
+
+.auth_block {
+    display: block;
+    float: right;
+    margin: 20px 5% 20px 0;
+    background-color: aqua;
+}
+
+.auth_block a, .auth_block p {
+    display: block;
+    float: left;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    margin: 10px 30px;
+}
+
+.auth_block a:hover, .auth_block .exit_account:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.icons ul li a:hover img{
+    transform: scale(1.5);
+}
+
+
+
+/*------------------ Main ---------------*/
+
+main {
+    margin-top: -20px;
+}
+
+.content_first_column {
+    /*clear: both;*/
+    display: block;
+    float: left;
+    width: 25%;
+    margin: 0 5% 30px 5%;
+}
+
+.content_second_column {
+    display: block;
+    float: left;
+    width: 60%;
+    margin: 5px 5% 30px 0;
+    background-color: ghostwhite;
+    padding-bottom: 20px;
+    outline: 5px solid aqua;
+}
+
+
+
+/*-------------------------Menu---------------------*/
+
+nav {
+    background-color: aqua;
+}
+
+nav h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    padding: 7px 0 0 10px;
+}
+
+.main_menu li {
+    /*padding: 5px;*/
+    list-style: none;
+}
+
+.main_menu li a {
+    display: block;
+    /*width: 100%;*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    /*height: 40px;*/
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+.main_menu li:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.main_menu li:hover a {
+    color: white; 
+}
+
+
+
+/* --------------------- Right-column index ---------------------------*/
+
+.content_second_column > h3 {
+    display: block;
+    clear: both;
+    float: left;
+    height: 40px;
+    color: black;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.travel_blocks {
+    display: block;
+    clear: both;
+    float: left;
+}
+
+.tour_card {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 280px;
+    background-color: aqua;
+    margin: 10px 20px;
+}
+
+.tour_card:hover{
+    cursor: pointer;
+    outline: 3px solid yellow;
+}
+
+.photo {
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin: 20px auto 0 auto;
+    background-color: yellow;
+}
+
+.photo img {
+    width: 160px;
+    height: 160px;
+}
+
+.tour_card h3 {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+.tour_card p {
+    display: block;
+    clear: both;
+    margin: auto;
+    font-style: italic;
+    margin: 10px auto 7px auto;
+    text-align: center;    
+}
+
+.busket_button_wrap {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tour_card button {
+    font-size: 16px;
+    background-color: green;
+    border-radius: 7px;
+    border: none;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+.tour_card button:hover {
+    transform: scale(1.1);
+    border: 3px solid white;
+    cursor: pointer;
+    position: relative;
+    top: -3px;
+}
+
+
+
+/* --------------------- Right-column auth ---------------------------*/
+
+.content_second_column.auth_page form {
+    display: block;
+    clear: both;
+}
+
+.content_second_column.auth_page .auth_form_input {
+    display: block;
+    float: left;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.content_second_column.auth_page input[type="text"] {
+    font-size: 16px;
+}
+
+.content_second_column.auth_page input[type="submit"] {
+    font-size: 16px;
+    background-color: green;
+    border-radius: 7px;
+    border: none;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    margin-left: 20px;
+    margin-top: -2px;
+}
+
+.content_second_column.auth_page input[type="submit"]:hover {
+    transform: scale(1.1);
+    border: 3px solid white;
+    cursor: pointer;
+    position: relative;
+    top: -3px;
+    margin-bottom: -6px;
+}
+
+
+
+/* --------------------- Right-column basket ---------------------------*/
+
+.content_second_column.basket_page h4 {
+    clear: both;
+    display: block;
+    margin: 20px;
+}
+
+.content_second_column.basket_page #form_order {
+    clear: both;
+    font-size: 25px;
+    background-color: green;
+    border-radius: 7px;
+    border: none;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    margin: 0 20px;
+}
+
+.content_second_column.basket_page button:hover {
+    transform: scale(1.1);
+    border: 3px solid white;
+    cursor: pointer;
+    position: relative;
+    top: -3px;
+}
+
+
+
+/* --------------------- Right-column orders ---------------------------*/
+
+.sub_order > h3 {
+    display: block;
+    clear: both;
+    margin: 5px 0 5px 20px;
+}
+
+
+
+/* --------------------- Right-column edit_catalog, edit_categories ---------------------------*/
+
+.edit_catalog form, .add_good form, .edit_categories form {
+    display: block;
+    clear: both;
+}
+
+.edit_catalog form input[type="text"], .edit_catalog form select, .add_good form input[type="text"], .add_good form select, .edit_categories input[type="text"] {
+    display: block;
+    float: left;
+    width: 13%;
+    min-width: 120px;
+    margin: 3px 0.5%;
+    font-size: 14px;
+}
+
+.edit_catalog form input[type="button"], .edit_catalog form input[type="submit"], .add_good form input[type="submit"], .edit_categories form input[type="button"], .edit_categories form input[type="submit"] {
+    display: block;
+    float: left;
+    width: 10%;
+    min-width: 120px;
+    margin: 3px 0.5%;
+    background-color: green;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+}
+
+.edit_categories form input[type="checkbox"] {
+    display: block;
+    float: left;
+    width: 7%;
+    margin: 3px 0.5%;
+    font-size: 14px;
+    margin-top: 6px;
+    transform: scale(1.5);
+}
+
+.edit_categories h5 {
+    display: block;
+    float: left;
+    font-size: 14px;
+    margin: 6px 4%;
+}
+
+.input_labels.cat_name {
+    margin-left: 9%;
+}
+
+.edit_categories input[type="text"].add_cat_margin {
+    margin-left: 9.5%;
+}
+
+.edit_catalog form input[type="button"]:hover, .edit_catalog form input[type="submit"]:hover, .add_good form input[type="submit"]:hover, .edit_categories form input[type="button"]:hover, .edit_categories form input[type="submit"]:hover {
+    transform: scale(1.1);
+    border: 3px solid white;
+    cursor: pointer;
+    position: relative;
+    margin: 0 0.5%;
+}
+
+.add_good h3, .edit_categories h3 {
+    display: block;
+    clear: both;
+    margin: 20px 0 15px 20px;
+}
+
+.input_labels {
+    margin: 5px 0;
+    display: block;
+    clear: both;
+}
+
+.input_labels_comment {
+    display: block;
+    clear: both;
+    width: 90%;
+}
+
+.input_labels_comment p {
+    margin: 10px 4%;
+}
+
+.input_labels p {
+    display: block;
+    float: left;
+    width: 13%;
+    min-width: 120px;
+    margin: 3px 4px 3px 1%;
+    font-size: 14px;
+    border: 2px solid none;
+}
+
+.input_labels p:first-child{
+    margin-left: 0.5%;
+}
+
+
+
+/* --------------------- Right-column edit_orders ---------------------------*/
+
+.sub_editorders > h3 {
+    display: block;
+    clear: both;
+    margin: 5px 0 15px 20px;
+}
+
+.sub_editorders > form, .sub_editorders > p {
+    display: block;
+    clear: both;
+    margin: 10px 20px;   
+}
+
+.sub_editorders > form > p {
+    display: block;
+    clear: both;
+    font-style: italic;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.sub_editorders > form > input[type="submit"], .sub_editorders > form > input[type="button"] {
+    display: block;
+    float: left;
+    width: 15%;
+    min-width: 120px;
+    margin: 3px 0.5%;
+    background-color: green;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+}
+
+.sub_editorders form input[type="text"], .sub_editorders form select {
+    display: block;
+    float: left;
+    width: 20%;
+    min-width: 120px;
+    margin: 3px 0.5%;
+    font-size: 14px;
+}
+
+.sub_editorders > form > input[type="submit"]:hover, .sub_editorders > form > input[type="button"]:hover {
+    transform: scale(1.1);
+    border: 3px solid white;
+    cursor: pointer;
+    position: relative;
+    margin: 0 0.5%;
+}
+
+
+
+/* --------------------- Right-column contacts ---------------------------*/
+
+.content_second_column.contact_page h3 {
+    clear: both;
+    font-size: 20px;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0 5px 20px;
+}
+
+.content_second_column.contact_page h5 {
+    clear: both;
+    font-size: 16px;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 0 5px 20px;
+}
+
+.content_second_column.contact_page iframe {
+    margin: 5px 0 5px 20px;
+}
+
+
+
+/* --------------------- Right-column tourcard ---------------------------*/
+
+.content_second_column.tour_page .tour_picture{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.content_second_column.tour_page .tour_picture img {
+    width: 100%;
+}
+
+.content_second_column.tour_page h3 {
+    display: block;
+    clear: both;
+    font-size: 25px;
+    margin: 10px 5%;
+    font-style: bold;
+}
+
+.content_second_column.tour_page h4 {
+    display: block;
+    clear: both;
+    font-size: 22px;
+    margin: 10px 5%;
+    font-style: italic;
+}
+
+.content_second_column.tour_page h5 {
+    display: block;
+    clear: both;
+    font-size: 18px;
+    margin: 10px 5%;
+    font-style: normal;
+}
+
+
+
+/*------------ Footer ----------------*/
+
+footer {
+    flex: 0 0 auto;
+    height: 50px;
+    background-color: aqua;
+}
+
+.footer_column {
+    display: block;
+    float: left;
+    font-size: 20px;
+    color: black;
+    margin: 12px 0 12px 5%;
+    text-decoration: none;
+}
+
+.footer_column:hover {
+    color: white;
+    cursor: pointer;
+}
